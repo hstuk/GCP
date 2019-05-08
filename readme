@@ -1,0 +1,8 @@
+Description of the files:
+
+run_boston.py -- Test of the GCP method for the Boston data set with 5% of outlier
+run_boston_cv.py -- Cross-validation over 50 folds of the GCP method for the Boston data set with 5% of outlier
+CPNetwork.py -- Theano based implementation of the GCP method
+distributions.py -- Auxiliary methods for KL divergences
+optimizer_setup.py -- Auxiliary methods for setting up the optimizier
+special_functions.py -- Theano implementation of the function Psi 
