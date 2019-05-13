@@ -132,7 +132,7 @@ for random_state in seed_list:
         alpha[alpha<=2] = 2.0001 #get rid of infinite variances
         v = scale*alpha/(alpha-2)
 
-        #predict corrected
+        #predict prognostic
 
         p_c, v_c = cp_network.predict(X_test, use_correction=True)
 
