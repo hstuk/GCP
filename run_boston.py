@@ -115,7 +115,7 @@ p = StSc_Y.inverse_transform(p)
 deg_freedom[deg_freedom<=2] = 2.0001 #get rid of infinite variances
 v = scale2*deg_freedom/(deg_freedom-2)
 
-#predict GCP (corrected)
+#predict GCP (prognostic)
 p_c, v_c = cp_network.predict(X_test, use_correction=True)
 p_c = StSc_Y.inverse_transform(p_c)
 
